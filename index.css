@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 50;
+    backdrop-filter: blur(2px);
+}
+
+.top1 {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.top1 span {
+    position: relative;
+    top: .8rem;
+    margin: 0 1.2rem 0 1.2rem;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.top2 {
+    position: relative;
+    top: -2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link1,
+.link2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.top2 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: large;
+    letter-spacing: 1px;
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.top2 a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.top2 a:hover {
+    color: #EF1932;
+    cursor: pointer;
+}
+
+.top2 a:hover:after {
+    width: 100%;
+    background: #EF1932;
+    left: 0;
+}
+
+main {
+    height: fit-content;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pattern {
+    width: 100%;
+    object-fit: cover;
+    height: 70%;
+}
+
+.hero_img,
+.fifa {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.fifa {
+    left: 1rem;
+}
+
+.text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.forza {
+    position: absolute;
+    font-weight: 900;
+    font-size: 6vw;
+    top: -3.5rem;
+    color: #EF1932;
+}
+
+.portu {
+    font-weight: 900;
+    font-size: 16vw;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.footer {
+    background: #000;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+/*Media Query*/
+
+@media (width < 735px) {
+    .top2 a {
+        font-size: .7rem;
+        padding: 5px 17px;
+    }
+
+    .top1 img {
+        height: 3.5rem;
+    }
+
+    .hero_img {
+        height: 30rem;
+    }
+
+    .forza {
+        font-size: 10vw;
+        top: -2.5rem;
+    }
+
+    .fifa {
+        bottom: .5rem;
+    }
+}
+
+@media (width<430px) {
+    .top2 {
+        top: -1.5rem;
+    }
+
+    .hero_img {
+        overflow: hidden;
+        height: 21rem;
+        bottom: 6rem;
+    }
+}

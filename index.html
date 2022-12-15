@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="top1">
+            <span></span>
+            <a href="https://en.wikipedia.org/wiki/Portugal">
+                <img src="images/portugal logo.png" alt="portugal_logo">
+            </a>
+            <span></span>
+        </div>
+        <div class="top2">
+            <div class="link1">
+                <a href="">home</a>
+                <a href="#">team</a>
+                <a href="#">Match</a>
+            </div>
+            <div class="link2">
+                <a href="#">merchandise</a>
+                <a href="#">contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="text">
+                <p class="forza">FORZA</p>
+                <p class="portu">PORTUGAL</p>
+            </div>
+            <img class="pattern" src="images/pattern 1.png" alt="pattern">
+            <img class="hero_img" src="images/hero image_auto_x2.jpg" alt="hero">
+            <img class="fifa" src="images/fifa logo.png" alt="fifa_logo">
+        </section>
+
+        <section>
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/Edwinliby"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <div class="row">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Match</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    Copyright © 2022 eKuttan - All rights reserved || Designed By: Edwin
+                    liby </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+
+</html>
