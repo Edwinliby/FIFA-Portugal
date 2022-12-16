@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 
     <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
 </head>
@@ -25,8 +26,9 @@
         </div>
         <div class="top2">
             <div class="link1">
-                <a href="">home</a>
-                <a href="#">team</a>
+                <a href="#hero">home</a>
+                <a
+                    href="https://www.google.com/search?q=portugal+team&oq=portugal+team&aqs=chrome..69i57j69i59l2j69i60.3791j0j1&sourceid=chrome&ie=UTF-8">team</a>
                 <a href="#">Match</a>
             </div>
             <div class="link2">
@@ -37,7 +39,7 @@
     </nav>
 
     <main>
-        <section>
+        <section class="s1" id="hero">
             <div class="text">
                 <p class="forza">FORZA</p>
                 <p class="portu">PORTUGAL</p>
@@ -47,30 +49,115 @@
             <img class="fifa" src="images/fifa logo.png" alt="fifa_logo">
         </section>
 
-        <section>
 
+
+        <section class="s2">
+            <div class="t2">
+                <p><span><img src="images/red circle.png" alt="">EIGHT</span> WORLD CUP</p>
+                <p>APPEARANCE</p>
+            </div>
+
+            <div class="container">
+
+                <div class="gallery-container w-3 h-2">
+                    <div class="gallery-item">
+                        <div class="image">
+                            <img src="images/1966.jpg" alt="nature">
+                        </div>
+                        <div class="text">FIRST MATCH 1966</div>
+                    </div>
+                </div>
+
+                <div class="gallery-container w-3 h-3">
+                    <div class="gallery-item">
+                        <div class="image">
+                            <img src="images/team.jpg" alt="people">
+                        </div>
+                        <div class="text">2006 TEAM</div>
+                    </div>
+                </div>
+
+                <div class="gallery-container h-2">
+                    <div class="gallery-item">
+                        <div class="image">
+                            <img src="images/coach.jpg" alt="sport">
+                        </div>
+                        <div class="text">COACH</div>
+                    </div>
+                </div>
+
+                <div class="gallery-container w-2">
+                    <div class="gallery-item">
+                        <div class="image">
+                            <img src="images/fan.jpg" alt="fitness">
+                        </div>
+                        <div class="text">FANS</div>
+                    </div>
+                </div>
+
+                <div class="gallery-container w-4 h-1">
+                    <div class="gallery-item">
+                        <div class="image">
+                            <img src="images/1986.jpg" alt="food">
+                        </div>
+                        <div class="text">1986 MATCH</div>
+                    </div>
+                </div>
+
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <div class="image">
+                            <img src="images/win.jpg" alt="travel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="t3">
+                <p>UEFA EURO</p>
+                <p>CHAMPIONSHIP <span><img src="images/red circle.png" alt="">WINNER</span> </p>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-cell">
+                    <img src="images/euro1.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/euro2.jpeg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/euro3.webp" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/euro4.jpeg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/euro5.webp" alt="">
+                </div>
+            </div>
+    
         </section>
 
         <footer>
             <div class="footer">
                 <div class="row">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/edwin.liby.73"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/e_kuttan/?hl=en"><i class="fa fa-instagram"></i></a>
                     <a href="https://github.com/Edwinliby"><i class="fa-brands fa-github"></i></a>
                 </div>
 
                 <div class="row">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#hero">Home</a></li>
                         <li><a href="#">Contact us</a></li>
                         <li><a href="#">Match</a></li>
                         <li><a href="#">Merchandise</a></li>
                     </ul>
                 </div>
-
                 <div class="row">
-                    Copyright © 2022 eKuttan - All rights reserved || Designed By: Edwin
-                    liby </div>
+                    Copyright © 2023- Designed By: <b>Edwin liby</b>
+                </div>
             </div>
         </footer>
 
@@ -84,7 +171,7 @@
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
-            document.getElementById("navbar").style.top = "-100px";
+            document.getElementById("navbar").style.top = "-150px";
         }
         prevScrollpos = currentScrollPos;
     }
