@@ -321,13 +321,13 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 
 .carousel-cell {
     overflow: hidden;
-    margin: 0 .5rem;
-    width: 25vw;
+    max-width: 90vw;
+    min-width: 25vw;
     background-color: #EF1932;
     height: 35vh;
     border-radius: 15px;
@@ -365,7 +365,7 @@ main {
 }
 
 .footer .row a:hover {
-    color: #fff;
+    color: rgb(129, 129, 129);
 }
 
 .footer .row ul {
@@ -420,7 +420,7 @@ main {
     }
 
     .hero_img {
-        height: 30rem;
+        height: 30vh;
     }
 
     .forza {
@@ -439,6 +439,36 @@ main {
 
     .t2 span img {
         position: absolute;
+        height: 12vh;
+        width: 36vw;
+        top: 7.5rem;
+        left: 0rem;
+        z-index: -1;
+    }
+
+    .t3 span img {
+        position: absolute;
+        height: 15vh;
+        width: 50vw;
+        top: 14.5rem;
+        right: 12rem;
+        z-index: -1;
+    }
+}
+
+@media (width<430px) {
+    .top2 {
+        top: -1.5rem;
+    }
+
+    .hero_img {
+        overflow: hidden;
+        height: 51vh;
+        bottom: 6rem;
+    }
+
+    .t2 span img {
+        position: absolute;
         height: 9.5vh;
         width: 36vw;
         top: 8.9rem;
@@ -453,17 +483,5 @@ main {
         top: 13rem;
         right: 5rem;
         z-index: -1;
-    }
-}
-
-@media (width<430px) {
-    .top2 {
-        top: -1.5rem;
-    }
-
-    .hero_img {
-        overflow: hidden;
-        height: 21rem;
-        bottom: 6rem;
     }
 }
